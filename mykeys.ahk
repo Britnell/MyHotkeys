@@ -208,9 +208,9 @@ Return
 ;	Capslock key switches to Google Chrome and Opens New tab
 ;
 Capslock::
-SwitchToWin("Mozilla Firefox") 		; "Chrome"
+SwitchToWin("Chrome")
 Sleep 10
-IfWinActive, Mozilla Firefox		; , Chrome
+IfWinActive, Chrome
 {
 Send ^t
 }
@@ -224,9 +224,9 @@ Return
 clipboard = 	;empty
 Send ^c
 ClipWait
-SwitchToWin("Mozilla Firefox") 		; "Chrome"
+SwitchToWin("Chrome") 	
 Sleep 10
-IfWinActive, Mozilla Firefox		; , Chrome
+IfWinActive, Chrome		
 {
 Send ^t
 Send ^v
@@ -258,9 +258,9 @@ if !ErrorLevel		; Only if nothing is entered
 if ( CmdVar = "w")		; Open Wikipedia
 {
 	; Open Web page
-	SwitchToWin("Mozilla Firefox") 
+	SwitchToWin("Chrome") 
 	Sleep 10
-	IfWinActive, Mozilla Firefox
+	IfWinActive, Chrome
 	{
 	Send ^t
 	Sleep 5
